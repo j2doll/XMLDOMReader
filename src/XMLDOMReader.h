@@ -1,3 +1,5 @@
+// XMLDOMReader.h
+
 #ifndef XMLDOMREADER_H
 #define XMLDOMREADER_H
 
@@ -34,7 +36,7 @@ protected:
 protected:
     Node* ptrRootNode; // root node
     int tabCount; // level
-    QList< Node* > allNodes; // all node
+    QList< Node* > allNodes; // all list of heap node
 };
 
 }

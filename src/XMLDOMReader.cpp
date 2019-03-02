@@ -1,7 +1,7 @@
+// XMLDOMReader.cpp
 
 #include "Attr.h"
 #include "Node.h"
-
 #include "XMLDOMReader.h"
 
 namespace XMLDOM {
@@ -20,7 +20,7 @@ XMLDOMReader::~XMLDOMReader()
 bool XMLDOMReader::load(QIODevice* ioDevice)
 {
     QDomDocument doc;
-    if (!doc.setContent(ioDevice))
+    if ( !doc.setContent(ioDevice) )
     {
         // qDebug() << "[debug][QDomDocument] failed to set content";
         return false;
@@ -152,15 +152,16 @@ Node* XMLDOMReader::findNode(int level, QString nodeName)
 
 void XMLDOMReader::clear()
 {
-    for (int ic = 0; ic < allNodes.size(); ic++ )
+    for (int ic = 0; ic < allNodes.size(); ic++)
     {
         Node* ptr = allNodes.at( ic );
         if ( ptr == NULL )
             continue;
 
-        delete ptr;
+        delete ptr; // clear heaps
         ptr = NULL;
     }
+
     allNodes.clear();
 }
 

@@ -29,8 +29,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 # Source code
 
 SOURCES += \
-main.cpp \
-test.cpp \
+    main.cpp \
+    test.cpp \
     Node.cpp \
     Attr.cpp \
     XMLDOMReader.cpp
@@ -40,3 +40,5 @@ HEADERS += \
     Attr.h \
     XMLDOMReader.h
 
+RESOURCES += \
+    test.qrc

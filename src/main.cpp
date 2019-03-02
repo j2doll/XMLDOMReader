@@ -13,13 +13,13 @@
 #include "Attr.h"
 #include "Node.h"
 #include "XMLDOMReader.h"
-using namespace XMLDOM;
+// using namespace XMLDOM;
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QFile file("chart1.xml");
+    QFile file(":/chart1.xml");
     if (!file.open(QIODevice::ReadOnly))
     {
         qDebug() << "failed to load xml";
@@ -34,16 +34,14 @@ int main(int argc, char *argv[])
         return (-2);
     }
 
-    // for deugging
-    domReader.debugNodes();
+    domReader.debugNodes(); // function for deugging
 
     XMLDOM::Node* ptrChart = domReader.findNode( 1, "c:chart" );
-
     if ( NULL != ptrChart )
     {
         for (int cindex = 0 ; cindex < ptrChart->childNode.size() ; cindex ++)
         {
-            Node* pNode = ptrChart->childNode.at( cindex );
+            XMLDOM::Node* pNode = ptrChart->childNode.at( cindex );
             if ( NULL == pNode )
                 continue;
 
