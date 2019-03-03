@@ -8,10 +8,10 @@
 - You can use it in various ways.
 
 ## License and link
-- XMLDOMReader is under Dual license. (LGPL3/Commercial)
+- XMLDOMReader is under Dual license. https://github.com/j2doll/XMLDOMReader
 	- LGPL 3 license
 		- If you did not fix XMLDOMReader, you may not open your any node. (It is not GPL license.)
-		- If you fix XMLDOMReader, you must open your **fixed XMLDOMReader code**.
+		- If you fix XMLDOMReader, you must open your fixed XMLDOMReader code.
 	- Commercial license 
 		- If you have modified the XMLDOMReader, you do not need to open anything.
 		- Please contact me(j2doll), if you want to use the commercial version.
