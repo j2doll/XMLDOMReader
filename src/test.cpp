@@ -12,8 +12,8 @@
 #include <QDomNode>
 #include <QDomNamedNodeMap>
 
-#include "Attr.h"
-#include "Node.h"
+#include "xdattr.h"
+#include "xdnode.h"
+#include "xdxmldomreader.h"
 
-#include "XMLDOMReader.h"
 

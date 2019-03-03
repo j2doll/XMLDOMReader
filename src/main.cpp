@@ -10,9 +10,9 @@
 #include <QCoreApplication>
 #include <QDebug>
 
-#include "Attr.h"
-#include "Node.h"
-#include "XMLDOMReader.h"
+#include "xdattr.h"
+#include "xdnode.h"
+#include "xdxmldomreader.h"
 // using namespace XMLDOM;
 
 int main(int argc, char *argv[])

@@ -1,8 +1,8 @@
-// XMLDOMReader.cpp
+//
 
-#include "Attr.h"
-#include "Node.h"
-#include "XMLDOMReader.h"
+#include "xdattr.h"
+#include "xdnode.h"
+#include "xdxmldomreader.h"
 
 namespace XMLDOM {
 

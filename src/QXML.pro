@@ -31,14 +31,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 SOURCES += \
     main.cpp \
     test.cpp \
-    Node.cpp \
-    Attr.cpp \
-    XMLDOMReader.cpp
+    xdnode.cpp \
+    xdattr.cpp \
+    xdxmldomreader.cpp
 
 HEADERS += \
-    Node.h \
-    Attr.h \
-    XMLDOMReader.h
+    xdnode.h \
+    xdattr.h \
+    xdxmldomreader.h
 
 RESOURCES += \
     test.qrc

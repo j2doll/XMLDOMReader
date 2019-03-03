@@ -1,4 +1,4 @@
-// XMLDOMReader.h
+//
 
 #ifndef XMLDOMREADER_H
 #define XMLDOMREADER_H
@@ -15,8 +15,8 @@
 #include <QDomNode>
 #include <QDomNamedNodeMap>
 
-#include "Attr.h"
-#include "Node.h"
+#include "xdattr.h"
+#include "xdnode.h"
 
 namespace XMLDOM {
 

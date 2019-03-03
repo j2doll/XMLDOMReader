@@ -1,7 +1,7 @@
-// Node.cpp
+//
 
-#include "Attr.h"
-#include "Node.h"
+#include "xdattr.h"
+#include "xdnode.h"
 
 namespace XMLDOM {
 

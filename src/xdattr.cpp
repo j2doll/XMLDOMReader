@@ -1,6 +1,6 @@
-// Attr.cpp
+//
 
-#include "Attr.h"
+#include "xdattr.h"
 
 namespace XMLDOM {
 

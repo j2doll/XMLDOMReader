@@ -7,7 +7,7 @@
 #include <QList>
 #include <QMap>
 
-#include "Attr.h"
+#include "xdattr.h"
 
 namespace XMLDOM {
 
