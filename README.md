@@ -8,7 +8,7 @@
 - You can use it in various ways.
 
 ## License and link
-- XMLDOMReader is under Dual license. https://github.com/j2doll/XMLDOMReader
+- XMLDOMReader is under dual license. https://github.com/j2doll/XMLDOMReader
 	- LGPL 3 license
 		- If you did not fix XMLDOMReader, you may not open your any node. (It is not GPL license.)
 		- If you fix XMLDOMReader, you must open your fixed XMLDOMReader code.
