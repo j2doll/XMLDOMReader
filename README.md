@@ -4,7 +4,7 @@
 
 ## Purpose of Making
 
-- Created as a sub-library of QXlsx.
+- Created as a sub-library of my projects.
 - You can use it in various ways.
 
 ## License and link
