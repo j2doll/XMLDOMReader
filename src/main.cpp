@@ -9,49 +9,23 @@
 #include <QDomElement>
 #include <QCoreApplication>
 #include <QDebug>
+#include <QVector>
+#include <QList>
 
 #include "xdattr.h"
 #include "xdnode.h"
 #include "xdxmldomreader.h"
 // using namespace XMLDOM;
 
+extern int test(QVector<QString> args);
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QFile file(":/chart1.xml");
-    if (!file.open(QIODevice::ReadOnly))
-    {
-        qDebug() << "failed to load xml";
-        file.close();
-        return (-1);
-    }
+    QVector<QString> args;
+    int ret = test(args);
 
-    XMLDOM::XMLDOMReader domReader;
-    if ( !domReader.load(&file) )
-    {
-        qDebug() << "failed to load";
-        return (-2);
-    }
-
-    domReader.debugNodes(); // function for deugging
-
-    XMLDOM::Node* ptrChart = domReader.findNode( 1, "c:chart" );
-    if ( NULL != ptrChart )
-    {
-        for (int cindex = 0 ; cindex < ptrChart->childNode.size() ; cindex ++)
-        {
-            XMLDOM::Node* pNode = ptrChart->childNode.at( cindex );
-            if ( NULL == pNode )
-                continue;
-
-            qDebug() << pNode->level << pNode->nodeName << pNode->nodeText ;
-        }
-    }
-
-    domReader.clear();
-
-    file.close();
     return 0;
 }
 

@@ -1,3 +1,6 @@
+// xdnode.h
+// https://github.com/j2doll/XMLDOMReader
+
 #ifndef NODE_H
 #define NODE_H
 

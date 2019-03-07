@@ -116,22 +116,16 @@ void XMLDOMReader::debugNodes()
         QString nodeName = node->nodeName;
 
         qDebug() << QString("[%1]").arg( level ) << nodeName;
-
-        /*
-        "[1]" "c:lang"
-        "[1]" "c:chart"
-        "[1]" "c:printSettings"
-        */
-
     }
-
 }
 
 Node* XMLDOMReader::findNode(int level, QString nodeName)
 {
-    Node* ret = NULL;
     if ( level < 0 )
-        return ret;
+        return NULL;
+
+    if ( nodeName.isEmpty() )
+        return NULL;
 
     for (int ifc = 0 ; ifc < this->allNodes.size() ; ifc++ )
     {
@@ -142,12 +136,100 @@ Node* XMLDOMReader::findNode(int level, QString nodeName)
         if ( ptrNode->level == level &&
              ptrNode->nodeName == nodeName )
         {
-            ret = ptrNode;
-            return ret;
+            return ptrNode;
         }
     }
 
+    return NULL;
+}
+
+QVector<QString> XMLDOMReader::enumerateNodeName(int level)
+{
+    QVector<QString> ret;
+
+    if ( level < 0 )
+        return ret;
+
+    for (int ifc = 0 ; ifc < this->allNodes.size() ; ifc++ )
+    {
+        Node* ptrNode = allNodes.at( ifc );
+        if (ptrNode == NULL)
+            continue;
+
+        if ( ptrNode->level != level )
+            continue;
+
+        if ( ptrNode->nodeName.isEmpty() )
+            continue;
+
+        ret.append( ptrNode->nodeName );
+    }
+
     return ret;
+}
+
+Node* XMLDOMReader::findNode(Node* parentNode, QString nodeName)
+{
+    if ( NULL == parentNode )
+        return NULL;
+
+    if ( nodeName.isEmpty() )
+        return NULL;
+
+    for (int ic = 0 ; ic < parentNode->childNode.size()  ; ic++ )
+    {
+       Node* ptrNode = parentNode->childNode.at( ic );
+       if ( NULL == ptrNode )
+           continue;
+
+       if ( ptrNode->nodeName == nodeName)
+           return ptrNode;
+    }
+
+    return NULL;
+}
+
+QVector<QString> XMLDOMReader::enumerateNodeName(Node* parentNode)
+{
+    QVector<QString> ret;
+
+    if ( NULL == parentNode )
+        return ret;
+
+    for (int ic = 0 ; ic < parentNode->childNode.size()  ; ic++ )
+    {
+       Node* ptrNode = parentNode->childNode.at( ic );
+       if ( NULL == ptrNode )
+           continue;
+
+       if ( ptrNode->nodeName.isEmpty() )
+           continue;
+
+        ret.append( ptrNode->nodeName );
+    }
+
+    return ret;
+}
+
+Attr* XMLDOMReader::findAttr(Node* ptrNode, QString attrName)
+{
+    if ( NULL == ptrNode )
+        return NULL;
+
+    if ( attrName.isEmpty() )
+        return NULL;
+
+    for (int ic = 0 ; ic < ptrNode->attrList.size() ; ic++ )
+    {
+       Attr* ptrAttr = ptrNode->attrList.at( ic );
+       if ( NULL == ptrAttr )
+           continue;
+
+       if ( ptrAttr->name == attrName )
+           return ptrAttr;
+    }
+
+    return NULL;
 }
 
 void XMLDOMReader::clear()

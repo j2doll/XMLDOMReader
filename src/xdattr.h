@@ -1,3 +1,6 @@
+// xdattr.h
+// https://github.com/j2doll/XMLDOMReader
+
 #ifndef ATTR_H
 #define ATTR_H
 
