@@ -12,10 +12,13 @@
 - You can fix it in various ways. (See 'License and link' for more information.)
 
 ## License and link
-- XMLDOMReader is under dual license. https://github.com/j2doll/XMLDOMReader
-	- Using LGPL 3 license
-		- If you did not fix XMLDOMReader, you may not open your any node. (It is not GPL license.)
-		- If you fix XMLDOMReader, you should open your fixed XMLDOMReader code.
-	- Using Commercial license 
-		- If you have modified the XMLDOMReader, you do not need to open anything.
-		- If you want to use the commercial version, please contact me(@j2doll) or leave me a issue.
+- XMLDOMReader is under dual license. 
+	- Using [CC BY-ND 4.0 license](https://creativecommons.org/licenses/by-nd/4.0/)
+		- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+		- **No Derivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+	- Using Commercial license
+		- If you have modified the XMLDOMReader, you do not need to open anything in Commercial license.
+		- If you want to use the commercial version, please contact [me](https://github.com/j2doll/discussion/issues) or leave me a issue.
+		
+- :email: https://github.com/j2doll/XMLDOMReader
+
