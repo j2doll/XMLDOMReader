@@ -13,7 +13,7 @@
 
 ## License and link
 - XMLDOMReader is under dual license. You can choose between two licenses.
-	- Using **[CC BY-ND 4.0 license]**(https://creativecommons.org/licenses/by-nd/4.0/)
+	- Using [**CC BY-ND 4.0 license**](https://creativecommons.org/licenses/by-nd/4.0/)
 		- You are free to:
 			- **Share** — copy and redistribute the material in any medium or format for any purpose, even commercially.
 		- Under the following terms:
