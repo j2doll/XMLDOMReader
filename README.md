@@ -9,7 +9,7 @@
 ## Purpose of Making
 
 - Created as a sub-library of my projects. 
-- You can fix it in various ways. (See 'License and link' for more information.)
+- See 'License and link' for more information.
 
 ## License and link
 - XMLDOMReader is under dual license. You can choose between two licenses.
