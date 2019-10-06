@@ -20,7 +20,7 @@
 			- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 			- **No Derivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
 	- Using **Commercial license**
-		- If you have modified the XMLDOMReader in Commercial license, you can distribute your software without restriction.
+		- **If you have modified the XMLDOMReader in Commercial license, you can distribute your software without restriction.**
 		- If you want to use the commercial version, please contact [me](https://github.com/j2doll/discussion/issues) or leave me a issue.
 		
 - :email: https://github.com/j2doll/XMLDOMReader
